@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=l2DmQbyqb5SAjMLNV9vYmYsQCWh08K0jNCsASk5vPLX_RYUPVBnLNcqGlV4D_l4yv5Uqfp9oENTfOhhBl_4n0ghjS35OX7GYkJ0ecUCib2A" charset="UTF-8"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+        .formcarry-container {
+            box-sizing: border-box;
+            margin: 40px auto 0 auto;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            width: 400px;
+            --fc-border-color: #ECEFF9;
+            --fc-normal-text-color: #0E0B3D;
+            --fc-normal-placeholder-color: #B3B8D0;
+            --fc-primary-color-hue: 220;
+            --fc-error-color-hue: 356;
+            --fc-primary-hsl: var(--fc-primary-color-hue), 100%, 54%;
+            --fc-error-hsl: var(--fc-error-color-hue), 100%, 54%;
+            --fc-field-hover-bg-color: #F7F9FC;
+            --fc-border-hover-color: #DDE0EE;
+            --fc-field-hover-text-color: #B3B8D0;
+            --fc-border-active-color: #1463FF;
+        }
+
+        .formcarry-container * {
+            box-sizing: border-box;
+        }
+
+        .formcarry-container label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .formcarry-container .formcarry-block:not(:first-child) {
+            margin-top: 16px;
+        }
+
+        .formcarry-container input,
+        .formcarry-container textarea,
+        .formcarry-container select {
+            margin-top: 4px;
+            width: 100%;
+            border: 1px solid var(--fc-border-color);
+            color: var(--fc-normal-text-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            transition: 125ms background, 125ms color, 125ms box-shadow;
+        }
+
+        .formcarry-container textarea {
+            min-height: 188px;
+            padding-top: 12px;
+        }
+
+        .formcarry-container button {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            height: 42px;
+            width: 100%;
+            border: 0;
+            border-radius: 6px;
+            background-color: hsla(var(--fc-primary-hsl));
+            color: #fff;
+            cursor: pointer;
+            transition: 125ms all;
+        }
+
+        .formcarry-container button:hover {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), hsla(var(--fc-primary-hsl));
+        }
+
+        .formcarry-container button:focus {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+            box-shadow: 0px 0px 0px 3px rgba(var(--fc-primary-hsl), 12%);
+        }
+ </style>
+<body>
+<section class="formcarry-container">
+    <form action="https://formcarry.com/s/Sb4KI9VGkFD" method="POST" enctype="multipart/form-data">
+        <div class="formcarry-block">
+            <label for="fc-generated-1-name">ФИО</label>
+            <input type="text" name="name" id="fc-generated-1-name" placeholder="Петров Петр Петрович" required />
+        </div>
+
+        <div class="formcarry-block">
+            <label for="fc-generated-1-email">Еmail</label>
+            <input type="email" name="email" id="fc-generated-1-email" placeholder="ppppp@mail.ru" required />
+        </div>
+
+        <div class="formcarry-block">
+            <label for="fc-generated-1-number">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 ***-**-**" required pattern="+7 ***-**-**">
+        </div>
+
+        <div class="formcarry-block">
+            <label for="fc-generated-1-organization">Организация</label>
+            <input type="text" name="organization" id="fc-generated-1-organization" placeholder="КУБГУ" required />
+        </div>
+        
+        <div class="formcarry-block">
+            <label for="fc-generated-1-message">Отзыв</label>
+            <textarea name="message" id="fc-generated-1-message" placeholder="Введите ваш отзыв" required></textarea>
+        </div>
+
+        <div class="formcarry-block">
+            <label for="contract">
+                <input type="checkbox" id="contract" name="contract" required>
+                Я согласен с условиями
+            </label>
+        </div>
+
+        <div class="formcarry-block">  
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+</section>
+</body>
+</html> 
